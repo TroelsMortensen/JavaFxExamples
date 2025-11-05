@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/FirstApp/FirstApp.iml" filepath="$PROJECT_DIR$/FirstApp/FirstApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaFxExamples.iml" filepath="$PROJECT_DIR$/JavaFxExamples.iml" />
       <module fileurl="file://$PROJECT_DIR$/YourFirstButton/YourFirstButton.iml" filepath="$PROJECT_DIR$/YourFirstButton/YourFirstButton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YourFirstButton/YourFirstTextField/YourFirstTextField.iml" filepath="$PROJECT_DIR$/YourFirstButton/YourFirstTextField/YourFirstTextField.iml" />
     </modules>
   </component>
 </project>
