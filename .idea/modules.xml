@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CheckboxExample/CheckboxExample.iml" filepath="$PROJECT_DIR$/CheckboxExample/CheckboxExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/FirstApp/FirstApp.iml" filepath="$PROJECT_DIR$/FirstApp/FirstApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FxmlFileExample/FxmlFileExample.iml" filepath="$PROJECT_DIR$/FxmlFileExample/FxmlFileExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaFxExamples.iml" filepath="$PROJECT_DIR$/JavaFxExamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaneExamples/PaneExamples.iml" filepath="$PROJECT_DIR$/PaneExamples/PaneExamples.iml" />
       <module fileurl="file://$PROJECT_DIR$/SimpleAppStructure/SimpleAppStructure.iml" filepath="$PROJECT_DIR$/SimpleAppStructure/SimpleAppStructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/YourFirstButton/YourFirstButton.iml" filepath="$PROJECT_DIR$/YourFirstButton/YourFirstButton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YourFirstController/YourFirstController.iml" filepath="$PROJECT_DIR$/YourFirstController/YourFirstController.iml" />
       <module fileurl="file://$PROJECT_DIR$/YourFirstTextField/YourFirstTextField.iml" filepath="$PROJECT_DIR$/YourFirstTextField/YourFirstTextField.iml" />
     </modules>
   </component>
