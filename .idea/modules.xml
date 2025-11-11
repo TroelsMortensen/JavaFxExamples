@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/CheckboxExample/CheckboxExample.iml" filepath="$PROJECT_DIR$/CheckboxExample/CheckboxExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/FirstApp/FirstApp.iml" filepath="$PROJECT_DIR$/FirstApp/FirstApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/FxmlFileExample/FxmlFileExample.iml" filepath="$PROJECT_DIR$/FxmlFileExample/FxmlFileExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroducingTheViewManager/IntroducingTheViewManager.iml" filepath="$PROJECT_DIR$/IntroducingTheViewManager/IntroducingTheViewManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaFxExamples.iml" filepath="$PROJECT_DIR$/JavaFxExamples.iml" />
       <module fileurl="file://$PROJECT_DIR$/PaneExamples/PaneExamples.iml" filepath="$PROJECT_DIR$/PaneExamples/PaneExamples.iml" />
       <module fileurl="file://$PROJECT_DIR$/SimpleAppStructure/SimpleAppStructure.iml" filepath="$PROJECT_DIR$/SimpleAppStructure/SimpleAppStructure.iml" />
