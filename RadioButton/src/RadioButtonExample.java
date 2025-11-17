@@ -6,6 +6,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.util.Arrays;
+
 public class RadioButtonExample extends Application
 {
     @Override
