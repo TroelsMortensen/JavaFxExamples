@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/ListViewExample/ListViewExample.iml" filepath="$PROJECT_DIR$/ListViewExample/ListViewExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/PaneExamples/PaneExamples.iml" filepath="$PROJECT_DIR$/PaneExamples/PaneExamples.iml" />
       <module fileurl="file://$PROJECT_DIR$/PassingDataBetweenViews/PassingDataBetweenViews.iml" filepath="$PROJECT_DIR$/PassingDataBetweenViews/PassingDataBetweenViews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RadioButton/RadioButton.iml" filepath="$PROJECT_DIR$/RadioButton/RadioButton.iml" />
       <module fileurl="file://$PROJECT_DIR$/SimpleAppStructure/SimpleAppStructure.iml" filepath="$PROJECT_DIR$/SimpleAppStructure/SimpleAppStructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/YourFirstButton/YourFirstButton.iml" filepath="$PROJECT_DIR$/YourFirstButton/YourFirstButton.iml" />
       <module fileurl="file://$PROJECT_DIR$/YourFirstController/YourFirstController.iml" filepath="$PROJECT_DIR$/YourFirstController/YourFirstController.iml" />
