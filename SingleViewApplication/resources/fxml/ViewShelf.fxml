@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="okayreads.presentation.controllers.ViewShelfController"
+      spacing="20" style="-fx-padding: 40;">
+    
+    <Label fx:id="shelfTitleLabel" text="Shelf Books" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    
+    <TableView fx:id="booksTable" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="isbnColumn" text="ISBN" prefWidth="120"/>
+            <TableColumn fx:id="titleColumn" text="Title" prefWidth="200"/>
+            <TableColumn fx:id="authorColumn" text="Author" prefWidth="175"/>
+            <TableColumn fx:id="yearColumn" text="Year" prefWidth="100"/>
+        </columns>
+    </TableView>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Back to Shelves" onAction="#handleBack"/>
+    </HBox>
+</VBox>
+

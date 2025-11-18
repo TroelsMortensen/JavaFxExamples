@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER" spacing="20">
+    
+    <Label text="Welcome to OkayReads" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    <Label text="Manage your personal library" style="-fx-font-size: 14px;"/>
+    <Label text="Select an option from the menu to get started" style="-fx-font-size: 12px; -fx-text-fill: gray;"/>
+</VBox>
+

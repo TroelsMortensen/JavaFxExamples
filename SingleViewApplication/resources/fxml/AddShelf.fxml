@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="okayreads.presentation.controllers.AddShelfController"
+      spacing="20" alignment="CENTER" style="-fx-padding: 40;">
+    
+    <Label text="Add New Shelf" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    
+    <GridPane hgap="10" vgap="15" alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints minWidth="100" halignment="RIGHT"/>
+            <ColumnConstraints minWidth="300"/>
+        </columnConstraints>
+        
+        <Label text="Shelf Name:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="nameField" promptText="e.g. To Read, Romance, Favorites" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    </GridPane>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Add Shelf" onAction="#handleAddShelf" style="-fx-background-color: #90EE90; -fx-font-weight: bold;"/>
+        <Button text="Cancel" onAction="#handleCancel"/>
+    </HBox>
+    
+    <Label fx:id="messageLabel" style="-fx-text-fill: green; -fx-font-weight: bold;"/>
+</VBox>
+
