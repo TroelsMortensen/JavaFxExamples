@@ -11,8 +11,7 @@ import java.io.IOException;
 public class ViewManager
 {
     private static Scene scene;
-
-    private static final String fxmlDirectoryPath = "/fxml/";
+    private final static String fxmlDirectoryPath = "/fxml/";
 
     public static void init(Stage primaryStage, String initialView) throws IOException
     {
