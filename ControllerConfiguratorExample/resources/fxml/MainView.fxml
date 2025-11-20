@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="okayreads.presentation.controllers.MainViewController"
+            prefHeight="600.0" prefWidth="900.0">
+    
+    <!-- Left Navigation Menu -->
+    <left>
+        <VBox spacing="10" style="-fx-background-color: #E6E6FA; -fx-padding: 20;">
+            <Label text="OkayReads" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+            <Separator/>
+            
+            <Label text="Authors" style="-fx-font-weight: bold;"/>
+            <Button text="Add New Author" onAction="#handleAddAuthor" prefWidth="180"/>
+            
+            <Separator/>
+            
+            <Label text="Books" style="-fx-font-weight: bold;"/>
+            <Button text="Add New Book" onAction="#handleAddBook" prefWidth="180"/>
+            
+            <Separator/>
+            
+            <Label text="Shelves" style="-fx-font-weight: bold;"/>
+            <Button text="Add New Shelf" onAction="#handleAddShelf" prefWidth="180"/>
+            <Button text="View Shelves" onAction="#handleViewShelves" prefWidth="180"/>
+        </VBox>
+    </left>
+    
+    <!-- Center Content Area - initially empty, will be loaded by controller -->
+</BorderPane>
+

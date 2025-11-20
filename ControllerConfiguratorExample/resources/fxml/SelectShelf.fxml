@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="okayreads.presentation.controllers.SelectShelfController"
+      spacing="20" alignment="CENTER" style="-fx-padding: 40;">
+    
+    <Label text="Select a Shelf to View" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    
+    <ListView fx:id="shelfListView" prefHeight="300" prefWidth="400"/>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="View Shelf" onAction="#handleViewShelf" style="-fx-background-color: #ADD8E6; -fx-font-weight: bold;"/>
+        <Button text="Back" onAction="#handleBack"/>
+    </HBox>
+    
+    <Label fx:id="messageLabel" style="-fx-text-fill: red; -fx-font-weight: bold;"/>
+</VBox>
+
