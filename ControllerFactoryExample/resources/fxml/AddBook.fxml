@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="okayreads.presentation.controllers.AddBookController"
+      spacing="20" alignment="CENTER" style="-fx-padding: 40;">
+    
+    <Label text="Add New Book" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    
+    <GridPane hgap="10" vgap="15" alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints minWidth="120" halignment="RIGHT"/>
+            <ColumnConstraints minWidth="300"/>
+        </columnConstraints>
+        
+        <Label text="ISBN:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="isbnField" promptText="Enter ISBN" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        
+        <Label text="Title:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="titleField" promptText="Enter book title" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        
+        <Label text="Publication Year:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="yearField" promptText="Enter year (e.g. 2020)" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        
+        <Label text="Author:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <ComboBox fx:id="authorComboBox" promptText="Select author" GridPane.columnIndex="1" GridPane.rowIndex="3" prefWidth="300"/>
+        
+        <Label text="Shelf:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <ComboBox fx:id="shelfComboBox" promptText="Select shelf (optional)" GridPane.columnIndex="1" GridPane.rowIndex="4" prefWidth="300"/>
+    </GridPane>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Add Book" onAction="#handleAddBook" style="-fx-background-color: #90EE90; -fx-font-weight: bold;"/>
+        <Button text="Cancel" onAction="#handleCancel"/>
+    </HBox>
+    
+    <Label fx:id="messageLabel" style="-fx-text-fill: green; -fx-font-weight: bold;"/>
+</VBox>
+

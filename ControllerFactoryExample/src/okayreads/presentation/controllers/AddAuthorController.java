@@ -1,18 +1,14 @@
 package okayreads.presentation.controllers;
 
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import okayreads.domain.Shelf;
+import okayreads.domain.Author;
 import okayreads.persistence.DataManager;
 import okayreads.persistence.ListDataManager;
 import okayreads.presentation.core.ViewManager;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
-public class AddShelfController implements Initializable
+public class AddAuthorController
 {
     @FXML
     private TextField nameField;
@@ -21,29 +17,29 @@ public class AddShelfController implements Initializable
     private Label messageLabel;
     
     private DataManager dataManager;
-
+    
     @FXML
-    public void initialize(URL location, ResourceBundle resources)
+    public void initialize()
     {
         dataManager = new ListDataManager();
     }
     
     @FXML
-    private void handleAddShelf()
+    private void handleAddAuthor()
     {
         String name = nameField.getText().trim();
         
         if (name.isEmpty())
         {
-            messageLabel.setText("Please enter a shelf name");
+            messageLabel.setText("Please enter an author name");
             messageLabel.setStyle("-fx-text-fill: red; -fx-font-weight: bold;");
             return;
         }
         
-        Shelf shelf = new Shelf(name);
-        dataManager.addShelf(shelf);
+        Author author = new Author(name);
+        dataManager.addAuthor(author);
         
-        messageLabel.setText("Shelf added successfully!");
+        messageLabel.setText("Author added successfully!");
         messageLabel.setStyle("-fx-text-fill: green; -fx-font-weight: bold;");
         nameField.clear();
     }
