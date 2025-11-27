@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/15_SingleViewApplication/15_SingleViewApplication.iml" filepath="$PROJECT_DIR$/15_SingleViewApplication/15_SingleViewApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/16_ControllerConfiguratorExample/16_ControllerConfiguratorExample.iml" filepath="$PROJECT_DIR$/16_ControllerConfiguratorExample/16_ControllerConfiguratorExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/17_ControllerFactoryExample/17_ControllerFactoryExample.iml" filepath="$PROJECT_DIR$/17_ControllerFactoryExample/17_ControllerFactoryExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/CheckboxExample/CheckboxExample.iml" filepath="$PROJECT_DIR$/CheckboxExample/CheckboxExample.iml" />
@@ -15,7 +16,6 @@
       <module fileurl="file://$PROJECT_DIR$/PassingDataBetweenViews/PassingDataBetweenViews.iml" filepath="$PROJECT_DIR$/PassingDataBetweenViews/PassingDataBetweenViews.iml" />
       <module fileurl="file://$PROJECT_DIR$/RadioButton/RadioButton.iml" filepath="$PROJECT_DIR$/RadioButton/RadioButton.iml" />
       <module fileurl="file://$PROJECT_DIR$/SimpleAppStructure/SimpleAppStructure.iml" filepath="$PROJECT_DIR$/SimpleAppStructure/SimpleAppStructure.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SingleViewApplication/SingleViewApplication.iml" filepath="$PROJECT_DIR$/SingleViewApplication/SingleViewApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/ViewManagerV3/ViewManagerV3.iml" filepath="$PROJECT_DIR$/ViewManagerV3/ViewManagerV3.iml" />
       <module fileurl="file://$PROJECT_DIR$/YourFirstButton/YourFirstButton.iml" filepath="$PROJECT_DIR$/YourFirstButton/YourFirstButton.iml" />
       <module fileurl="file://$PROJECT_DIR$/YourFirstController/YourFirstController.iml" filepath="$PROJECT_DIR$/YourFirstController/YourFirstController.iml" />
