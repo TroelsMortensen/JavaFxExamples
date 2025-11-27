@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/09_SimpleAppStructure/09_SimpleAppStructure.iml" filepath="$PROJECT_DIR$/09_SimpleAppStructure/09_SimpleAppStructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/10_YourFirstController/10_YourFirstController.iml" filepath="$PROJECT_DIR$/10_YourFirstController/10_YourFirstController.iml" />
       <module fileurl="file://$PROJECT_DIR$/11_IntroducingTheViewManager/11_IntroducingTheViewManager.iml" filepath="$PROJECT_DIR$/11_IntroducingTheViewManager/11_IntroducingTheViewManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/12_PassingDataBetweenViews/12_PassingDataBetweenViews.iml" filepath="$PROJECT_DIR$/12_PassingDataBetweenViews/12_PassingDataBetweenViews.iml" />
@@ -17,7 +18,6 @@
       <module fileurl="file://$PROJECT_DIR$/ListViewExample/ListViewExample.iml" filepath="$PROJECT_DIR$/ListViewExample/ListViewExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/PaneExamples/PaneExamples.iml" filepath="$PROJECT_DIR$/PaneExamples/PaneExamples.iml" />
       <module fileurl="file://$PROJECT_DIR$/RadioButton/RadioButton.iml" filepath="$PROJECT_DIR$/RadioButton/RadioButton.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SimpleAppStructure/SimpleAppStructure.iml" filepath="$PROJECT_DIR$/SimpleAppStructure/SimpleAppStructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/YourFirstButton/YourFirstButton.iml" filepath="$PROJECT_DIR$/YourFirstButton/YourFirstButton.iml" />
       <module fileurl="file://$PROJECT_DIR$/YourFirstTextField/YourFirstTextField.iml" filepath="$PROJECT_DIR$/YourFirstTextField/YourFirstTextField.iml" />
     </modules>
