@@ -37,13 +37,16 @@ public class ViewShelfController implements AcceptsStringArgument, Initializable
     private TableColumn<Book, Integer> yearColumn;
     
     private String shelfName;
-    private DataManager dataManager;
+    private final DataManager dataManager;
+
+    public ViewShelfController(DataManager dataManager)
+    {
+        this.dataManager = dataManager;
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
-        dataManager = new ListDataManager();
-        
         // Set up table columns
         isbnColumn.setCellValueFactory(new PropertyValueFactory<>("isbn"));
         titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));

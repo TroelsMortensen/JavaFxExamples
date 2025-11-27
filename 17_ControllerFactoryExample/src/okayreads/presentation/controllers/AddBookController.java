@@ -36,12 +36,16 @@ public class AddBookController implements Initializable
     @FXML
     private Label messageLabel;
     
-    private DataManager dataManager;
+    private final DataManager dataManager;
+
+    public AddBookController(DataManager dataManager)
+    {
+        this.dataManager = dataManager;
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
-        dataManager = new ListDataManager();
         loadAuthors();
         loadShelves();
     }

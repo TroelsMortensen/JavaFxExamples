@@ -32,7 +32,10 @@ public class ViewManager
     {
         try
         {
-            Parent root = FXMLLoader.load(ViewManager.class.getResource(fxmlDirectoryPath + viewName + ".fxml"));
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(ViewManager.class.getResource(fxmlDirectoryPath + viewName + ".fxml"));
+            loader.setControllerFactory(new ControllerFactory());
+            Parent root = loader.load();
             mainLayout.setCenter(root);
         }
         catch (Exception e)
@@ -49,6 +52,7 @@ public class ViewManager
         loader.setLocation(ViewManager.class.getResource(fxmlDirectoryPath + viewName + ".fxml"));
         try
         {
+            loader.setControllerFactory(new ControllerFactory());
             Parent root = loader.load();
             AcceptsStringArgument controller = loader.getController();
             controller.setArgument(argument);

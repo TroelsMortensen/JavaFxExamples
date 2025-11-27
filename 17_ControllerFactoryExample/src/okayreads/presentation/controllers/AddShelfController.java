@@ -12,7 +12,7 @@ import okayreads.presentation.core.ViewManager;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AddShelfController implements Initializable
+public class AddShelfController
 {
     @FXML
     private TextField nameField;
@@ -20,14 +20,13 @@ public class AddShelfController implements Initializable
     @FXML
     private Label messageLabel;
     
-    private DataManager dataManager;
+    private final DataManager dataManager;
 
-    @FXML
-    public void initialize(URL location, ResourceBundle resources)
+    public AddShelfController(DataManager dataManager)
     {
-        dataManager = new ListDataManager();
+        this.dataManager = dataManager;
     }
-    
+
     @FXML
     private void handleAddShelf()
     {

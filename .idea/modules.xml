@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/16_ControllerConfiguratorExample/16_ControllerConfiguratorExample.iml" filepath="$PROJECT_DIR$/16_ControllerConfiguratorExample/16_ControllerConfiguratorExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17_ControllerFactoryExample/17_ControllerFactoryExample.iml" filepath="$PROJECT_DIR$/17_ControllerFactoryExample/17_ControllerFactoryExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/CheckboxExample/CheckboxExample.iml" filepath="$PROJECT_DIR$/CheckboxExample/CheckboxExample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ControllerConfiguratorExample/ControllerConfiguratorExample.iml" filepath="$PROJECT_DIR$/ControllerConfiguratorExample/ControllerConfiguratorExample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ControllerFactoryExample/ControllerFactoryExample.iml" filepath="$PROJECT_DIR$/ControllerFactoryExample/ControllerFactoryExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/FirstApp/FirstApp.iml" filepath="$PROJECT_DIR$/FirstApp/FirstApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/FxmlFileExample/FxmlFileExample.iml" filepath="$PROJECT_DIR$/FxmlFileExample/FxmlFileExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/FxmlFilesInResourceFolder/FxmlFilesInResourceFolder.iml" filepath="$PROJECT_DIR$/FxmlFilesInResourceFolder/FxmlFilesInResourceFolder.iml" />

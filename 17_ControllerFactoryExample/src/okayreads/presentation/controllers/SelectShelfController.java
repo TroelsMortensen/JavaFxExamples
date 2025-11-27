@@ -21,12 +21,16 @@ public class SelectShelfController implements Initializable
     @FXML
     private Label messageLabel;
     
-    private DataManager dataManager;
+    private final DataManager dataManager;
+
+    public SelectShelfController(DataManager dataManager)
+    {
+        this.dataManager = dataManager;
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
-        dataManager = new ListDataManager();
         loadShelves();
     }
     

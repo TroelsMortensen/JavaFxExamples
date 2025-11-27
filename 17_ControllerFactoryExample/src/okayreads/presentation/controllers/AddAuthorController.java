@@ -1,18 +1,13 @@
 package okayreads.presentation.controllers;
 
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import okayreads.domain.Author;
 import okayreads.persistence.DataManager;
-import okayreads.persistence.ListDataManager;
 import okayreads.presentation.core.ViewManager;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
-public class AddAuthorController implements Initializable
+public class AddAuthorController
 {
     @FXML
     private TextField nameField;
@@ -20,14 +15,13 @@ public class AddAuthorController implements Initializable
     @FXML
     private Label messageLabel;
     
-    private DataManager dataManager;
-    
-    @Override
-    public void initialize(URL location, ResourceBundle resources)
+    private final DataManager dataManager;
+
+    public AddAuthorController(DataManager dataManager)
     {
-        dataManager = new ListDataManager();
+        this.dataManager = dataManager;
     }
-    
+
     @FXML
     private void handleAddAuthor()
     {
