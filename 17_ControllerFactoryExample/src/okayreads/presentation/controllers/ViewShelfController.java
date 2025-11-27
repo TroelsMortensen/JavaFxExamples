@@ -1,6 +1,7 @@
 package okayreads.presentation.controllers;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -12,7 +13,10 @@ import okayreads.persistence.ListDataManager;
 import okayreads.presentation.core.AcceptsStringArgument;
 import okayreads.presentation.core.ViewManager;
 
-public class ViewShelfController implements AcceptsStringArgument
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class ViewShelfController implements AcceptsStringArgument, Initializable
 {
     @FXML
     private Label shelfTitleLabel;
@@ -32,11 +36,11 @@ public class ViewShelfController implements AcceptsStringArgument
     @FXML
     private TableColumn<Book, Integer> yearColumn;
     
-    private DataManager dataManager;
     private String shelfName;
-    
-    @FXML
-    public void initialize()
+    private DataManager dataManager;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources)
     {
         dataManager = new ListDataManager();
         

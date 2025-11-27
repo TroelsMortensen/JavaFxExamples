@@ -1,6 +1,7 @@
 package okayreads.presentation.controllers;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import okayreads.domain.Shelf;
@@ -8,9 +9,11 @@ import okayreads.persistence.DataManager;
 import okayreads.persistence.ListDataManager;
 import okayreads.presentation.core.ViewManager;
 
+import java.net.URL;
 import java.util.List;
+import java.util.ResourceBundle;
 
-public class SelectShelfController
+public class SelectShelfController implements Initializable
 {
     @FXML
     private ListView<String> shelfListView;
@@ -19,9 +22,9 @@ public class SelectShelfController
     private Label messageLabel;
     
     private DataManager dataManager;
-    
-    @FXML
-    public void initialize()
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources)
     {
         dataManager = new ListDataManager();
         loadShelves();

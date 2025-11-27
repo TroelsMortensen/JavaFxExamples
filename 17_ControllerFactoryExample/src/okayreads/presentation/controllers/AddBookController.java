@@ -1,6 +1,7 @@
 package okayreads.presentation.controllers;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -11,9 +12,11 @@ import okayreads.persistence.DataManager;
 import okayreads.persistence.ListDataManager;
 import okayreads.presentation.core.ViewManager;
 
+import java.net.URL;
 import java.util.List;
+import java.util.ResourceBundle;
 
-public class AddBookController
+public class AddBookController implements Initializable
 {
     @FXML
     private TextField isbnField;
@@ -34,9 +37,9 @@ public class AddBookController
     private Label messageLabel;
     
     private DataManager dataManager;
-    
-    @FXML
-    public void initialize()
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources)
     {
         dataManager = new ListDataManager();
         loadAuthors();

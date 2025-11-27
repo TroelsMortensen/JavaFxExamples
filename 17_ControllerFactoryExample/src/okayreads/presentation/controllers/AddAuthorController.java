@@ -1,6 +1,7 @@
 package okayreads.presentation.controllers;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import okayreads.domain.Author;
@@ -8,7 +9,10 @@ import okayreads.persistence.DataManager;
 import okayreads.persistence.ListDataManager;
 import okayreads.presentation.core.ViewManager;
 
-public class AddAuthorController
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class AddAuthorController implements Initializable
 {
     @FXML
     private TextField nameField;
@@ -18,8 +22,8 @@ public class AddAuthorController
     
     private DataManager dataManager;
     
-    @FXML
-    public void initialize()
+    @Override
+    public void initialize(URL location, ResourceBundle resources)
     {
         dataManager = new ListDataManager();
     }
