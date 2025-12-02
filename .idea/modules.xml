@@ -11,6 +11,9 @@
       <module fileurl="file://$PROJECT_DIR$/15_SingleViewApplication/15_SingleViewApplication.iml" filepath="$PROJECT_DIR$/15_SingleViewApplication/15_SingleViewApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/16_ControllerConfiguratorExample/16_ControllerConfiguratorExample.iml" filepath="$PROJECT_DIR$/16_ControllerConfiguratorExample/16_ControllerConfiguratorExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/17_ControllerFactoryExample/17_ControllerFactoryExample.iml" filepath="$PROJECT_DIR$/17_ControllerFactoryExample/17_ControllerFactoryExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/18_AppContext/18_AppContext.iml" filepath="$PROJECT_DIR$/18_AppContext/18_AppContext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/19_ChangingViewThroughEvents/19_ChangingViewThroughEvents.iml" filepath="$PROJECT_DIR$/19_ChangingViewThroughEvents/19_ChangingViewThroughEvents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20_IndependentNavigationMenu/20_IndependentNavigationMenu.iml" filepath="$PROJECT_DIR$/20_IndependentNavigationMenu/20_IndependentNavigationMenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/CheckboxExample/CheckboxExample.iml" filepath="$PROJECT_DIR$/CheckboxExample/CheckboxExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/FirstApp/FirstApp.iml" filepath="$PROJECT_DIR$/FirstApp/FirstApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/FxmlFileExample/FxmlFileExample.iml" filepath="$PROJECT_DIR$/FxmlFileExample/FxmlFileExample.iml" />
