@@ -1,7 +1,9 @@
 package okayreads.presentation.controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -12,6 +14,7 @@ import okayreads.persistence.DataManager;
 import okayreads.persistence.ListDataManager;
 import okayreads.presentation.core.AcceptsStringArgument;
 import okayreads.presentation.core.ViewManager;
+import okayreads.presentation.core.events.ChangeViewEvent;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -78,9 +81,10 @@ public class ViewShelfController implements AcceptsStringArgument, Initializable
     }
     
     @FXML
-    private void handleBack()
+    private void handleBack(ActionEvent evt)
     {
-        ViewManager.showView("SelectShelf");
+        Node source = (Node)evt.getSource();
+        source.fireEvent(new ChangeViewEvent("Home"));
     }
 }
 

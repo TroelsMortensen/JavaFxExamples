@@ -1,7 +1,9 @@
 package okayreads.presentation.controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -11,6 +13,7 @@ import okayreads.domain.Shelf;
 import okayreads.persistence.DataManager;
 import okayreads.persistence.ListDataManager;
 import okayreads.presentation.core.ViewManager;
+import okayreads.presentation.core.events.ChangeViewEvent;
 
 import java.net.URL;
 import java.util.List;
@@ -145,9 +148,10 @@ public class AddBookController implements Initializable
     }
     
     @FXML
-    private void handleCancel()
+    private void handleCancel(ActionEvent evt)
     {
-        ViewManager.showView("Home");
+        Node source = (Node)evt.getSource();
+        source.fireEvent(new ChangeViewEvent("Home"));
     }
 }
 

@@ -30,20 +30,7 @@ public class ViewManager
 
     public static void showView(String viewName)
     {
-        try
-        {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(ViewManager.class.getResource(fxmlDirectoryPath + viewName + ".fxml"));
-            loader.setControllerFactory(new ControllerFactory());
-            Parent root = loader.load();
-            mainLayout.setCenter(root);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            Alert error = new Alert(Alert.AlertType.ERROR, "Cannot find view: " + viewName);
-            error.show();
-        }
+        showView(viewName, null);
     }
 
     public static void showView(String viewName, String argument)
@@ -54,8 +41,11 @@ public class ViewManager
         {
             loader.setControllerFactory(new ControllerFactory());
             Parent root = loader.load();
-            AcceptsStringArgument controller = loader.getController();
-            controller.setArgument(argument);
+            Object controller = loader.getController();
+            if(controller instanceof AcceptsStringArgument)
+            {
+                ((AcceptsStringArgument)controller).setArgument(argument);
+            }
             mainLayout.setCenter(root);
         }
         catch (Exception e)

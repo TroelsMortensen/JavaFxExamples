@@ -1,13 +1,15 @@
 package okayreads.presentation.controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import okayreads.domain.Shelf;
 import okayreads.persistence.DataManager;
-import okayreads.persistence.ListDataManager;
 import okayreads.presentation.core.ViewManager;
+import okayreads.presentation.core.events.ChangeViewEvent;
 
 import java.net.URL;
 import java.util.List;
@@ -52,7 +54,7 @@ public class SelectShelfController implements Initializable
     }
     
     @FXML
-    private void handleViewShelf()
+    private void handleViewShelf(ActionEvent evt)
     {
         String selectedShelfName = shelfListView.getSelectionModel().getSelectedItem();
         
@@ -61,14 +63,16 @@ public class SelectShelfController implements Initializable
             messageLabel.setText("Please select a shelf");
             return;
         }
-        
-        ViewManager.showView("ViewShelf", selectedShelfName);
+
+        Node source = (Node)evt.getSource();
+        source.fireEvent(new ChangeViewEvent("ViewShelf", selectedShelfName));
     }
     
     @FXML
-    private void handleBack()
+    private void handleBack(ActionEvent evt)
     {
-        ViewManager.showView("Home");
+        Node source = (Node)evt.getSource();
+        source.fireEvent(new ChangeViewEvent("Home"));
     }
 }
 
