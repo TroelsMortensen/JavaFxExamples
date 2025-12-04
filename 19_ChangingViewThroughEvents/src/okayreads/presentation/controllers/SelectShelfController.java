@@ -8,7 +8,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import okayreads.domain.Shelf;
 import okayreads.persistence.DataManager;
-import okayreads.presentation.core.ViewManager;
 import okayreads.presentation.core.events.ChangeViewEvent;
 
 import java.net.URL;

@@ -7,7 +7,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import okayreads.domain.Author;
 import okayreads.persistence.DataManager;
-import okayreads.presentation.core.ViewManager;
 import okayreads.presentation.core.events.ChangeViewEvent;
 
 public class AddAuthorController

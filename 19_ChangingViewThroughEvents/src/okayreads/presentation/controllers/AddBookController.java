@@ -11,8 +11,6 @@ import okayreads.domain.Author;
 import okayreads.domain.Book;
 import okayreads.domain.Shelf;
 import okayreads.persistence.DataManager;
-import okayreads.persistence.ListDataManager;
-import okayreads.presentation.core.ViewManager;
 import okayreads.presentation.core.events.ChangeViewEvent;
 
 import java.net.URL;
