@@ -10,7 +10,7 @@ public class RunApp extends Application
     @Override public void start(Stage primaryStage) throws Exception
     {
         Button button = new Button("Click me");
-        button.setOnAction(RunApp::handleClick);
+        button.setOnAction(evt -> handleClick(evt));
         VBox box = new VBox(button);
         Scene scene = new Scene(box);
         primaryStage.setScene(scene);

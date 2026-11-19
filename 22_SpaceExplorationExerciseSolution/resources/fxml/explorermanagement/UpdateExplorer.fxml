@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="extraterrestrialexploration.presentation.controllers.explorermanagement.UpdateExplorerController"
+      spacing="16" styleClass="card">
+
+    <Label text="Update Explorer" styleClass="view-title"/>
+
+    <GridPane hgap="12" vgap="14">
+        <columnConstraints>
+            <ColumnConstraints minWidth="140" halignment="RIGHT"/>
+            <ColumnConstraints minWidth="320"/>
+        </columnConstraints>
+
+        <Label text="Name:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Planet:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <ComboBox fx:id="planetComboBox" prefWidth="320" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    </GridPane>
+
+    <HBox spacing="10">
+        <Button text="Save" onAction="#handleSave" styleClass="primary-button"/>
+        <Button text="Cancel" onAction="#handleCancel" styleClass="secondary-button"/>
+    </HBox>
+
+    <Label fx:id="messageLabel"/>
+</VBox>

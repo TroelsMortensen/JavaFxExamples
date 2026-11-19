@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="extraterrestrialexploration.presentation.controllers.explorermanagement.MoveExplorerController"
+      spacing="16" styleClass="card">
+
+    <Label text="Move Explorer" styleClass="view-title"/>
+
+    <GridPane hgap="12" vgap="14">
+        <columnConstraints>
+            <ColumnConstraints minWidth="160" halignment="RIGHT"/>
+            <ColumnConstraints minWidth="320"/>
+        </columnConstraints>
+
+        <Label text="Explorer:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Label fx:id="nameLabel" styleClass="detail-value" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Current Planet:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Label fx:id="currentPlanetLabel" styleClass="detail-value" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="New Planet:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <ComboBox fx:id="planetComboBox" promptText="Select destination" prefWidth="320" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    </GridPane>
+
+    <HBox spacing="10">
+        <Button text="Move" onAction="#handleSave" styleClass="primary-button"/>
+        <Button text="Cancel" onAction="#handleCancel" styleClass="secondary-button"/>
+    </HBox>
+
+    <Label fx:id="messageLabel"/>
+</VBox>

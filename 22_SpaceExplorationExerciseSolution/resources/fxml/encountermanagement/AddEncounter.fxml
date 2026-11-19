@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="extraterrestrialexploration.presentation.controllers.encountermanagement.AddEncounterController"
+      spacing="16" styleClass="card">
+
+    <Label text="Add Encounter" styleClass="view-title"/>
+
+    <GridPane hgap="12" vgap="14">
+        <columnConstraints>
+            <ColumnConstraints minWidth="140" halignment="RIGHT"/>
+            <ColumnConstraints minWidth="320"/>
+        </columnConstraints>
+
+        <Label text="Date:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <DatePicker fx:id="datePicker" prefWidth="320" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Alien:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <ComboBox fx:id="alienComboBox" promptText="Select alien" prefWidth="320" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Planet:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <ComboBox fx:id="planetComboBox" promptText="Select planet" prefWidth="320" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Explorer:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <ComboBox fx:id="explorerComboBox" promptText="Select explorer" prefWidth="320" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <Label text="Description:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <TextArea fx:id="descriptionField" prefRowCount="4" promptText="Describe the encounter" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    </GridPane>
+
+    <HBox spacing="10">
+        <Button text="Save" onAction="#handleSave" styleClass="primary-button"/>
+        <Button text="Cancel" onAction="#handleCancel" styleClass="secondary-button"/>
+    </HBox>
+
+    <Label fx:id="messageLabel"/>
+</VBox>

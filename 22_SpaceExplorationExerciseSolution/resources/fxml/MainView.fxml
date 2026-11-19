@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="extraterrestrialexploration.presentation.controllers.MainViewController"
+            prefHeight="650.0" prefWidth="1000.0"
+            styleClass="root-pane">
+
+    <left>
+        <VBox spacing="12" styleClass="sidebar">
+            <Label text="Space Exploration" styleClass="app-title"/>
+            <Separator styleClass="sidebar-separator"/>
+
+            <Button text="Home" onAction="#handleHome" prefWidth="180" styleClass="nav-button"/>
+            <Button text="Planets" onAction="#handlePlanets" prefWidth="180" styleClass="nav-button"/>
+            <Button text="Explorers" onAction="#handleExplorers" prefWidth="180" styleClass="nav-button"/>
+            <Button text="Aliens" onAction="#handleAliens" prefWidth="180" styleClass="nav-button"/>
+            <Button text="Encounters" onAction="#handleEncounters" prefWidth="180" styleClass="nav-button"/>
+        </VBox>
+    </left>
+
+</BorderPane>

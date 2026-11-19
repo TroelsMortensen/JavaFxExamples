@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="extraterrestrialexploration.presentation.controllers.planetmanagement.UpdatePlanetController"
+      spacing="16" styleClass="card">
+
+    <Label text="Update Planet" styleClass="view-title"/>
+
+    <GridPane hgap="12" vgap="14">
+        <columnConstraints>
+            <ColumnConstraints minWidth="140" halignment="RIGHT"/>
+            <ColumnConstraints minWidth="320"/>
+        </columnConstraints>
+
+        <Label text="Name:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Climate:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextArea fx:id="climateField" prefRowCount="3" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Distance (AU):" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="distanceField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Atmosphere:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <CheckBox fx:id="atmosphereCheckBox" text="Has atmosphere" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <Label text="Life:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <CheckBox fx:id="lifeCheckBox" text="Has life" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    </GridPane>
+
+    <HBox spacing="10">
+        <Button text="Save" onAction="#handleSave" styleClass="primary-button"/>
+        <Button text="Cancel" onAction="#handleCancel" styleClass="secondary-button"/>
+    </HBox>
+
+    <Label fx:id="messageLabel"/>
+</VBox>

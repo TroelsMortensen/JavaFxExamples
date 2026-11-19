@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="extraterrestrialexploration.presentation.controllers.alienmanagement.ShowAlienController"
+      spacing="16" styleClass="card">
+
+    <Label text="Alien Details" styleClass="view-title"/>
+
+    <GridPane hgap="12" vgap="12">
+        <columnConstraints>
+            <ColumnConstraints minWidth="140" halignment="RIGHT"/>
+            <ColumnConstraints minWidth="320"/>
+        </columnConstraints>
+
+        <Label text="ID:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Label fx:id="idLabel" styleClass="detail-value" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Name:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Label fx:id="nameLabel" styleClass="detail-value" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Species:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <Label fx:id="speciesLabel" styleClass="detail-value" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Description:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <Label fx:id="descriptionLabel" styleClass="detail-value" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    </GridPane>
+
+    <HBox spacing="10">
+        <Button text="Back" onAction="#handleBack" styleClass="secondary-button"/>
+    </HBox>
+</VBox>

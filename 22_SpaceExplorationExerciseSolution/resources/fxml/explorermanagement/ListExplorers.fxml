@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="extraterrestrialexploration.presentation.controllers.explorermanagement.ListExplorersController"
+      spacing="16" styleClass="card">
+
+    <Label text="Explorers" styleClass="view-title"/>
+
+    <TableView fx:id="explorersTable" prefHeight="360">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="60"/>
+            <TableColumn fx:id="nameColumn" text="Name" prefWidth="200"/>
+            <TableColumn fx:id="planetColumn" text="Current Planet" prefWidth="220"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <Button text="Add" onAction="#handleAdd" styleClass="primary-button"/>
+        <Button text="Show" onAction="#handleShow" styleClass="secondary-button"/>
+        <Button text="Update" onAction="#handleUpdate" styleClass="secondary-button"/>
+        <Button text="Move" onAction="#handleMove" styleClass="secondary-button"/>
+        <Button text="Delete" onAction="#handleDelete" styleClass="danger-button"/>
+    </HBox>
+
+    <Label fx:id="messageLabel"/>
+</VBox>
